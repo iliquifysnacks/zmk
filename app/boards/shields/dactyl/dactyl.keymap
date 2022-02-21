@@ -17,14 +17,14 @@
 // |   ESC   |    Q    |    W    |    E    |    R    |    T    |                               |    Z    |    U    |    I    |    O    |    P    |    Ü    |
 // |   TAB   |    A    |    S    |    D    |    F    |    G    |                               |    H    |    J    |    K    |    L    |    Ö    |    Ä    |
 // |  SHIFT  |    Y    |    X    |    C    |    V    |    B    |                               |    N    |    M    |    ,    |    .    |    /    |  RETURN |
-//           |  LEFT   |  RIGHT  |BACKSPACE|  SHIFT  |   CTRL  |                               |  CMD    |  UPPER  |  SPACE  |   DOWN  |    UP   |
+//           |  LEFT   |  RIGHT  |  SHIFT  |BACKSPACE|   CTRL  |                               |  CMD    |  SPACE  |  UPPER  |   DOWN  |    UP   |
 //                                         |   ALT   |  LOWER  |                               |  RETURN |  SPACE  |
             bindings = <
-    &kp ESC    &kp Q    &kp W      &kp E    &kp R      &kp T                                    &kp Z     &kp U     &kp I     &kp O    &kp P      &kp LBKT
-    &kp TAB    &kp A    &kp S      &kp D    &kp F      &kp G                                    &kp H     &kp J     &kp K     &kp L    &kp SEMI   &kp SQT
-    &kp LSHIFT &kp Y    &kp X      &kp C    &kp V      &kp B                                    &kp N     &kp M     &kp COMMA &kp DOT  &kp FSLH   &kp RET
-               &kp LEFT &kp RIGHT  &kp BSPC &mo LSHIFT &kp LCTRL                                &kp LGUI  &mo UPPER &kp SPACE &kp DOWN &kp UP
-                                            &kp LALT   &kp LOWER                                &kp RET   &kp BSPC
+    &kp ESC    &kp Q    &kp W      &kp E      &kp R      &kp T                                    &kp Y     &kp U     &kp I     &kp O    &kp P      &kp LBKT
+    &kp TAB    &kp A    &kp S      &kp D      &kp F      &kp G                                    &kp H     &kp J     &kp K     &kp L    &kp SEMI   &kp SQT
+    &kp LSHIFT &kp Z    &kp X      &kp C      &kp V      &kp B                                    &kp N     &kp M     &kp COMMA &kp DOT  &kp FSLH   &kp RET
+               &kp LEFT &kp RIGHT  &kp LSHIFT &kp BSPC   &kp LCTRL                                &kp LGUI  &mo SPACE &kp UPPER &kp DOWN &kp UP
+                                              &kp LALT   &kp LOWER                                &kp RET   &kp BSPC
             >;
 
         };
