@@ -17,31 +17,31 @@
 // |   ESC   |    Q    |    W    |    E    |    R    |    T    |              |    Z    |    U    |    I    |    O    |    P    |    Ü    |
 // |   TAB   |    A    |    S    |    D    |    F    |    G    |              |    H    |    J    |    K    |    L    |    Ö    |    Ä    |
 // |  SHIFT  |    Y    |    X    |    C    |    V    |    B    |              |    N    |    M    |    ,    |    .    |    -    |    ß    |
-//           |  LEFT   |  RIGHT  |  SHIFT  |BACKSPACE|   CTRL  |              |  CMD    |  SPACE  |  UPPER  |   DOWN  |    UP   |
+//           |  LEFT   |  RIGHT  |  SHIFT  |BACKSPACE|   CTRL  |              |   CMD   |  SPACE  |  UPPER  |   DOWN  |    UP   |
 //                                         |   ALT   |  LOWER  |              |  RETURN |  SPACE  |
             bindings = <
-    &kp ESC    &kp Q    &kp W      &kp E      &kp R      &kp T                 &kp Y     &kp U     &kp I     &kp O    &kp P      &kp LBKT
-    &kp TAB    &kp A    &kp S      &kp D      &kp F      &kp G                 &kp H     &kp J     &kp K     &kp L    &kp SEMI   &kp SQT
-    &kp LSHIFT &kp Z    &kp X      &kp C      &kp V      &kp B                 &kp N     &kp M     &kp COMMA &kp DOT  &kp FSLH   &kp MINUS
-               &kp LEFT &kp RIGHT  &kp LSHIFT &kp BSPC   &kp LCTRL             &kp LGUI  &kp SPACE &mo UPPER &kp DOWN &kp UP
-                                              &kp LALT   &mo LOWER             &kp RET   &kp BSLH
+    &kp ESC    &kp Q    &kp W      &kp E      &kp R      &kp T                 &kp Y        &kp U     &kp I     &kp O    &kp P      &kp LBKT
+    &kp TAB    &kp A    &kp S      &kp D      &kp F      &kp G                 &kp H        &kp J     &kp K     &kp L    &kp SEMI   &kp SQT
+    &kp LSHIFT &kp Z    &kp X      &kp C      &kp V      &kp B                 &kp N        &kp M     &kp COMMA &kp DOT  &kp FSLH   &kp MINUS
+               &kp LEFT &kp RIGHT  &kp LSHIFT &kp BSPC   &kp LCTRL             &kp LGUI     &kp SPACE &mo UPPER &kp DOWN &kp UP
+                                              &kp LALT   &mo LOWER             &mt RALT RET &kp BSLH
             >;  
 
         };
 
         upper_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |    =    |    /    |    (    |    )    |    |    |   BOOT  |               |   BOOT  |    7    |    8    |    9    |    P    |    Ü    |
-// |    <    |    $    |    %    |    &    |    [    |    ]    |               |    H    |    4    |    5    |    6    |    Ö    |    Ä    |
-// |    ^    |    !    |    "    |    §    |    {    |    }    |               |   BOOT  |    1    |    2    |    3    |    /    |    ß    |
-//           |   LEFT  |  RIGHT  |  SHIFT  |BACKSPACE|   CTRL  |               |  RETURN |  SPACE  |  UPPER  |    0    |  R ALT  |
+// |    =    |    /    |    (    |    )    |    |    |   BOOT  |               |   BOOT  |    7    |    8    |    9    |         |    +    |
+// |    <    |    $    |    %    |    &    |    [    |    ]    |               |    *    |    4    |    5    |    6    |    #    |    Ä    |
+// |    ^    |    !    |    "    |    §    |    {    |    }    |               |         |    1    |    2    |    3    |    ´    |    ß    |
+//           |   LEFT  |  RIGHT  |  SHIFT  |BACKSPACE|   CTRL  |               |   CMD   |  SPACE  |  UPPER  |    0    |    .    |
 //                                         |   ALT   |  LOWER  |               |  RETURN |    ´    |
             bindings = <
-    &kp LS(N0)      &kp LS(N7) &kp LS(N8) &kp LS(N9) &kp LA(N7) &bootloader     &bootloader &kp N7    &kp N8    &kp N9   &out OUT_BLE &kp RBKT
-    &kp NON_US_BSLH &kp LS(N4) &kp LS(N5) &kp LS(N6) &kp LA(N5) &kp LA(N6)      &kp RBRC    &kp N4    &kp N5    &kp N6   &kp BSLH     &kp SQT
-    &kp GRAVE       &kp LS(N1) &kp LS(N2) &kp LS(N3) &kp LA(N8) &kp LA(N9)      &none       &kp N1    &kp N2    &kp N3   &kp FSLH     &kp RET
-                    &kp LEFT   &kp RIGHT  &kp LSHIFT &mo BSPC   &kp LCTRL       &kp LGUI    &mo SPACE &kp UPPER &kp N0   &kp DOT
-                                                     &kp LALT   &mo LOWER       &kp RET     &kp EQUAL
+    &kp LS(N0)      &kp LS(N7) &kp LS(N8) &kp LS(N9) &kp LA(N7) &bootloader     &bootloader  &kp N7    &kp N8    &kp N9   &none        &kp RBKT
+    &kp NON_US_BSLH &kp LS(N4) &kp LS(N5) &kp LS(N6) &kp LA(N5) &kp LA(N6)      &kp RBRC     &kp N4    &kp N5    &kp N6   &kp BSLH     &kp SQT
+    &kp GRAVE       &kp LS(N1) &kp LS(N2) &kp LS(N3) &kp LA(N8) &kp LA(N9)      &none        &kp N1    &kp N2    &kp N3   &kp EQUAL    &kp RET
+                    &kp LEFT   &kp RIGHT  &kp LSHIFT &mo BSPC   &kp LCTRL       &kp LGUI     &mo SPACE &mo UPPER &kp N0   &kp DOT
+                                                     &kp LALT   &mo LOWER       &mt RALT RET &kp EQUAL
             >;
 
         };
@@ -55,11 +55,11 @@
 //           |   GUI   |   DEL   | RETURN  |  SPACE  | ESCAPE  |                 |  RETURN |  SPACE  |   TAB   |   BSPC  |  R ALT  |
 //                                         |  SPACE  | ESCAPE  |                 |  RETURN |  SPACE  |
             bindings = <
-    &kp GRAVE  &kp EXCL   &kp AT     &kp HASH &kp DLLR  &kp PRCNT                &kp CARET &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &kp DEL
-    &kp TAB    &none      &none      &none    &none     &reset                   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp MINUS &kp EQUAL
-    &kp LSHIFT &none      &none      &none    &out OUT_BLE &bootloader           &none     &none     &none     &none     &kp BSLH  &kp RET
-    &kp LEFT   &kp RIGHT  &kp LSHIFT &mo BSPC   &kp LCTRL       &kp LGUI         &mo SPACE &kp UPPER &kp N0   &kp DOT
-                                                     &kp LALT   &mo LOWER        &kp RET     &kp BSPC
+    &kp GRAVE  &kp EXCL     &kp AT     &kp HASH &kp DLLR      &kp PRCNT         &kp CARET    &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &kp DEL
+    &kp TAB    &out OUT_BLE &none      &none    &none         &reset            &kp LEFT     &kp DOWN  &kp UP    &kp RIGHT &kp MINUS &kp EQUAL
+    &kp LSHIFT &none        &none      &none    &out OUT_BLE  &bootloader       &none        &none     &none     &none     &kp BSLH  &kp RET
+    &kp LEFT   &kp RIGHT    &kp LSHIFT &mo BSPC &kp LCTRL     &kp LGUI          &mo SPACE    &kp UPPER &kp N0   &kp DOT
+                                                &kp LALT &mo LOWER              &mt RALT RET &kp BSPC
             >;
 
         };
